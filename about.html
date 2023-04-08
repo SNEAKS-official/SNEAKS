@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4H3DHZKXEF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4H3DHZKXEF');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Own Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <title>PRJ4 Base Group Template &mdash; Landing Page</title>
+
+    <!-- Google Analytics code goes just below here (check PRJ4 Guide for details) -->
+    <!-- End of Google Analytics code -->
+  </head>
+
+  <body class="h-100 d-flex flex-column">
+
+    <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/sneaks-logo.png" alt="Premium supplies sneaks light blue logo" width="70" >
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contents
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Marketing</a></li>
+                <li><a class="dropdown-item" href="#">Testing</a></li>
+                <li><a class="dropdown-item" href="#">Lean canvas & brand roadmap</a></li>
+                <li><a class="dropdown-item-last" href="#">Corporate</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <!-- End of navigation bar -->
+
+    <!-- Start of main placeholder in landing page -->
+    <main class="d-flex flex-column justify-content-center align-items-left">
+        <h1> About </h1>
+        <section class="about-wrapper-100">
+            <h2>Brand and visual Identity</h2>
+            <section class="identity-content">
+                <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
+                </div>
+                <!-- Start of carrousel, adapted from https://getbootstrap.com/docs/5.1/components/carousel/ -->
+                <section class="container-fluid p-0">
+                    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="carousel-button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="carousel-button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="carousel-button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/sneaks-logo.png" class="d-block mx-auto w-40" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Logo</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/sneaks-brand_moodboard.png" class="d-block mx-auto w-40" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Moodboard</h3>
+                            </div>
+                        </div>
+                            <div class="carousel-item">
+                            <img src="images/sneaks-brand_color_palette.png" class="d-block mx-auto w-40" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Color palette</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </section>
+                <!-- End of carrousel -->
+            </section>
+        </section>
+
+        <section class="about-wrapper-50">
+            <section class="vv-content content-left">
+                <h2>Vision</h2>
+                <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
+                </div>
+            </section>
+
+            <section class="vv-content">
+                <h2>Brand Values</h2>
+                <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="about-wrapper-100">
+            <h2>Persona</h2>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
+            </div>
+        </section>
+    </main>
+    <!-- End of main placeholder -->
+
+  </body>
+</html>
