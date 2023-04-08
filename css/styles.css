@@ -1,35 +1,296 @@
-/* Importing a Google Font */
+* { box-sizing: border-box; }
 
+/* Importing a Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
 
+/* BODY */
 /* Changing the main font and background colour */
-
 body {
-	font-family: Poppins, sans-serif;
-	background-color: #fff8db;
+  margin: 0;
+  background-color: #f6f3e8;
+  font-family: Poppins, sans-serif;
 }
 
-/* Changing the background colour for the header */
-
-header {
-	background-color: #f18442d;
+/* STYLE */
+h1 {
+	font-size: 56px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin: 0;
+}
+h2 {
+	font-size: 44px;
+	text-align: center;
+}
+p {
+	font-size: 16px;
+	margin-bottom: 20px;
 }
 
+/* MENU */
 /* Changing the background color for the navigation bar */
-
 .navbar {
-	background-color: #f18442d;
+	width: 100%;
+	height: 75px;
+	padding: 0px;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	position: fixed;
+
+	border: 2px solid #000;
+	background-color: #f6f3e8;
+}
+.navbar-brand {
+	max-width: 75px;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	padding-right: 8px;
+}
+.nav-link {
+	width: 100px;
+	border-bottom: 0px;
+	display: inline-block;
+
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000;
+}
+.nav-link:hover{
+	font-weight: 900;
+	color: #000;	
 }
 
-/* Effect on social media buttons */
+li{
+	font-size: 20px;
+}
 
+.dropdown-menu {
+	border: 2px solid #000;
+	border-radius: 15px;
+
+	z-index: -1;
+
+	background-color: #f6f3e8;
+}
+.dropdown-item {
+	width: 500px;
+	border-bottom: 2px solid #000;
+	display: inline-block;
+
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+
+	background-color: #f6f3e8;
+}
+.dropdown-item:hover{
+	font-weight: 900;
+	color: #000;	
+
+	background-color: #f6f3e8;
+}
+.dropdown-item-last {
+	width: 500px;
+	border-bottom: 0px;
+	display: inline-block;
+
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000;	
+
+	background-color: #f6f3e8;
+}
+.dropdown-item-last:hover{
+	font-weight: 900;
+	color: #000;	
+
+	background-color: #f6f3e8;
+}
+
+/* FOOTER */
+/* Effect on social media buttons */
 footer a:hover {
 	opacity: .5;
 }
 
-/* Corporate navbar */
+/* MAIN */
+main {
+	width: 100%;
+	height: auto;
+	padding-top: 75px;
+	
+	display: flex;
+	flex-direction: column;
+}
 
-#navbar-corporate a.active {
-	color: #800000;
-	font-weight: bold;
+/* Homepage */
+.section-wrapper{
+	width: 100%;
+	height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-items: center;
+
+	background-color: #b9e9ff;	
+}
+.section-container{
+	max-width: 850px;
+	min-height: 700px;
+	margin: 0 auto;
+	padding: 72px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	background-image: url(images/sneaks-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+	background-color: #7dafe0;
+}
+
+.button-section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.button-cta{
+	width: 405px;
+	margin: 16px;
+	padding: 24px;
+	border: 2px solid #000;
+	border-radius: 50px;
+	display: inline-block;
+
+	font-size: 16px;
+	font-weight: 900;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+
+	background-color: #f6f3e8;
+}
+.button-cta:hover {
+	border-radius: 50px;
+
+    font-style: none;
+	color: #000;
+    text-decoration: none;
+
+	background-color: #7dafe0;
+}
+.button-socials{
+	width: 200px;
+	margin: 8px;
+	padding: 24px;
+	border: 2px solid #000;
+	border-radius: 50px;
+	display: inline-block;
+
+	font-size: 16px;
+	font-weight: 900;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+
+	background-color: #f6f3e8;
+}
+.button-socials:hover {
+	font-style: none;
+	color: #000;
+    text-decoration: none;
+
+	background-color: #7dafe0;
+}
+
+/* ABOUT */
+.align-items-left {
+	width: 100%;
+    height: auto;
+    padding: 24px;
+    padding-top: 99px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.about-wrapper-100 {
+	width: 100%;
+	min-height: 75vh;
+	padding: 24px;
+	margin-top: 24px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+
+	border: 2px solid #000;
+	border-radius: 25px;
+}
+.about-wrapper-50 {
+	width: 100%;
+	min-height: 80vh;
+	padding: 0px;
+	margin-top: 24px;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	border: 0px solid #000;
+}
+
+.identity-content {
+	width: 100%;
+	height: auto;
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+.carousel-caption {
+	color: #000;
+	background-color: #b9e9ff;
+	border-radius: 25px;
+}
+
+.vv-wrapper {
+	width: 100%;
+	height: 80vh;
+	margin-top: 24px;
+
+	display: flex;
+	flex-direction: row;
+}
+.vv-content {
+	width: 50%;
+	height: 80vh;
+	padding: 24px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	border: 2px solid #000;
+	border-radius: 20px;
+}
+.content-left {
+	margin-right: 24px;
 }
