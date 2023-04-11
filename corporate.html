@@ -1,15 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
+    
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4H3DHZKXEF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4H3DHZKXEF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4H3DHZKXEF');
+    </script>
 
-  gtag('config', 'G-4H3DHZKXEF');
-</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,71 +23,78 @@
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
-    <title>PRJ4 Base Group Template &mdash; Corporate Information</title>
+    <title>PRJ4 Base Group Template &mdash; Landing Page</title>
 
     <!-- Google Analytics code goes just below here (check PRJ4 Guide for details) -->
-
     <!-- End of Google Analytics code -->
-    
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar-corporate" data-bs-smooth-scroll="true">
+
+  <body class="h-100 d-flex flex-column">
 
     <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
     <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
+
         <a class="navbar-brand" href="index.html">
-          <img src="images/buas-square.svg" width="40" alt="Breda University of Applied Sciences">
+          <img src="images/sneaks-logo.png" alt="Premium supplies sneaks light blue logo" width="70" >
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="about.html">About</a>
             </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contents
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="marketing.html">Marketing</a></li>
+                <li><a class="dropdown-item" href="testing.html">Testing</a></li>
+                <li><a class="dropdown-item" href="lean_canvas-and-brand_roadmap.html">Lean canvas & brand roadmap</a></li>
+                <li><a class="dropdown-item-last" href="corporate.html">Corporate</a></li>
+              </ul>
+            </li>
+            
             <li class="nav-item">
-              <a class="nav-link active" href="corporate.html">Corporate</a>
+              <a class="nav-link" aria-current="page" href="invest.html">Invest</a>
             </li>
           </ul>
         </div>
-      </div>
     </nav>
     <!-- End of navigation bar -->
 
-    <header class="py-2 py-md-4 py-lg-5 text-center container-fluid bg-gradient text-light">
-      <h1 class="fw-light">Corporate information</h1>
-    </header>
+    <main class="d-flex flex-column justify-content-center align-items-left">
+      <h1>Corporate information</h1>
 
-    <main class="container-fluid container-xl">
-      <div class="row">
-        <div class="col-sm-4 col-md-3 col-lg-2 py-4">
-          <nav id="navbar-corporate" class="nav sticky-sm-top flex-row flex-sm-column lh-1 justify-content-sm-between">
-            <a class="nav-link p-0 mb-sm-3 fs-5 me-2 me-sm-0 text-decoration-none" href="#general">General</a>
-            <a class="nav-link p-0 mb-sm-3 fs-5 me-2 me-sm-0 text-decoration-none" href="#content">Content</a>
-            <a class="nav-link p-0 mb-sm-2 fs-5 me-2 me-sm-0 text-decoration-none" href="#production">Production</a>
-            <nav class="nav d-none d-sm-flex flex-column mb-2">
-              <a class="nav-link ms-3 p-0 mb-2" href="#production-1">Design Elements</a>
-              <a class="nav-link ms-3 p-0 mb-2" href="#production-2">Credits</a>
-              <a class="nav-link ms-3 p-0 mb-2" href="#production-3">Testing Report</a>
+      <div class="corporate-main">
+        <div>
+          <nav class="side-nav">
+            <a class="side-nav-link" href="#general">General</a>
+            <a class="side-nav-link" href="#content">Content</a>
+            <a class="side-nav-link" href="#production">Production</a>
+            <nav class="side-nav-sub">
+              <a class="side-nav-link-sub" href="#production-3">Testing Report</a>
+              <a class="side-nav-link-sub" href="#production-1">Design Elements</a>
+              <a class="side-nav-link-sub" href="#production-2">Credits</a>
             </nav>
-            <a class="nav-link p-0 mb-sm-2 fs-5 me-2 me-sm-0 text-decoration-none" href="#marketing">Marketing</a>
-            <nav class="nav d-none d-sm-flex flex-column mb-2">
-              <a class="nav-link ms-3 p-0 mb-2" href="#marketing-1">Context of campaign and promotional activities</a>
-              <a class="nav-link ms-3 p-0 mb-2" href="#marketing-2">Learning Points</a>
-              <a class="nav-link ms-3 p-0 mb-2" href="#marketing-3">Future Planning</a>
-              <a class="nav-link ms-3 p-0 mb-2" href="#marketing-4">Professionalism</a>
+            <a class="side-nav-link" href="#marketing">Marketing</a>
+            <nav class="side-nav-sub">
+              <a class="side-nav-link-sub" href="#marketing-1">Context of campaign and promotional activities</a>
+              <a class="side-nav-link-sub" href="#marketing-2">Learning Points</a>
+              <a class="side-nav-link-sub" href="#marketing-3">Future Planning</a>
+              <a class="side-nav-link-sub" href="#marketing-4">Professionalism</a>
             </nav>
-            <a class="nav-link p-0 mb-sm-2 fs-5 me-2 me-sm-0 text-decoration-none" href="#management">Management</a>
-            <nav class="nav d-none d-sm-flex flex-column mb-2">
-              <a class="nav-link ms-3 p-0 mb-2" href="#management-1">Lean Canvas</a>
-              <a class="nav-link ms-3 p-0 mb-2" href="#management-2">Validation of Assumptions</a>
+            <a class="side-nav-link" href="#management">Management</a>
+            <nav class="side-nav-sub">
+              <a class="side-nav-link-sub" href="#management-1">Lean Canvas</a>
+              <a class="side-nav-link-sub" href="#management-2">Validation of Assumptions</a>
             </nav>
-            <a class="nav-link p-0 mb-sm-2 fs-5 me-2 me-sm-0 text-decoration-none" href="#appendix">Appendix</a>
+            <a class="side-nav-link" href="#appendix">Appendix</a>
           </nav>    
         </div>
-        <div class="col-sm-8 col-md-9 col-lg-10 py-sm-4">
-
+        
+        <div class="general-wraper">
           <!-- Start General -->
           <h2 id="general">General Information</h2>
           <p>
@@ -95,58 +103,33 @@
             <em>(please change text <strong>and</strong> hyperlink destination)</em>
           </p>
           <p>
-            This website was created by&hellip; <em>(only students listed below will be graded!)</em>
+            This website was created by:
           </p>
           <ol>
-            <li>Student (ID: 000000)</li>
-            <li>Student (ID: 000000)</li>
+            <li>Wes Hereijgers (191773)</li>
           </ol>
           <!-- End General -->
 
           <!-- Start Content -->
 
           <h2 id="content">Content</h2>
-          <p>Please clarify here the match between students and pieces of content. Make sure that you provide a <u>link</u> to the correct page within the website</p>
+          <p>Since I'm redoing this course alone, all content on this page has been created by myself alone (Wes)</p>
           <table class="table table-bordered table-striped">
             <thead>
               <tr class="bg-white">
                 <th scope="col">#</th>
                 <th scope="col">Student ID</th>
-                <th scope="col">Value</th>
+                <th scope="col">Name</th>
                 <th scope="col">Name and link of content</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">1.</th>
-                <td>000000</td>
-                <td>Value</td>
+                <td>191773</td>
+                <td>Wes Hereijgers</td>
                 <td>
-                  <a href="index.html">Content title</a>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2.</th>
-                <td></td>
-                <td></td>
-                <td>
-                  <a href="#"></a>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">3.</th>
-                <td></td>
-                <td></td>
-                <td>
-                  <a href="#"></a>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">4.</th>
-                <td></td>
-                <td></td>
-                <td>
-                  <a href="#"></a>
+                  <a href="index.html">All content</a>
                 </td>
               </tr>
             </tbody>
@@ -156,42 +139,58 @@
           
           <h2 id="production" class="mt-5">Production</h2>
           <h4 id="production-1" class="mt-2">Design Elements</h4>
-          <p>Please provide a list of design elements alongside their justifications:</p>
+          <p>Design elements & justifications:</p>
           <ul>
             <li>
-              A colour scheme (with HTML colour codes, which must be consistent with your final website)
-              <em>&mdash; see the example below from the BUas brand book:</em>
-              <ul class="list-unstyled">
-                <li>
-                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #EE7622;"></span>
-                  #EE7622
-                  <em>The orange colour refers to the Dutch identity and the city of Breda (Oranjestad). Orange stands for&hellip;</em>
+                <span class="border border-secondary rounded px-2 me-1" style="background-color: #7DAFE0;"></span>
+                  #7DAFE0
+                  <em>We used this vibrant blue color, also described as ‘sky blue’ as the primary color for our brand. The reason why is because this color blue stands out from other colors, because of it’s brightness. BUT, at the same time, it is also soft enough not to be considered an intens color. Also, it matches well with styles/outfits that are worn often in the streetwear scene, so it subliminally links back to the industry.</em>
+                    <p></p>
                 </li>
                 <li>
-                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #00406B;"></span>
-                  #00406B
-                  <em>Dark blue signifies&hellip;</em>
+                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #F6F3E8;"></span>
+                  #F6F3E8
+                  <em>Beige - This color is used as a complimentary color for the primary blue color. The light beige color matches super well with the sky blue color, creating a beautifully soft color palette, while still making the brand look professional. Also, beige colors are very often used as a primary/secondary tone in streetwear. Again, linking back to the industry!</em>
+                <li>
+                    <p></p>
+                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #EBECED;"></span>
+                  #EBECED
+                  <em>Soft grey - Not used very often, but this soft grey color is used when the light blue or beige colors don’t fit in a specific situation. We chose this color because it doesn’t attract attention, and is just as soft as the blue and beige colors.</em>
+                    <p></p>
                 </li>
               </ul>
             </li>
-            <li>Font choices</li>
-            <li>User interface patterns (e.g. grids, carousels, menu organizations etc.)</li>
-            <li>The structure of the <strong>navigation and content</strong> (e.g. how content units are distributed across pages)</li>
-            <li>All these elements must be justified by referring to the theory <strong>and/or vocabulary</strong> of design</li>
-            <li>Please relate these elements to other units, for example:
-              <ul>
-                <li>How does website design fit the <strong>values and personality of the brand</strong>?</li>
-                <li>How does website design fit the <strong>marketing and communication strategy</strong>?</li>
-                <li>How does website design help showcase the <strong>unique value proposal of the product</strong>?</li>
-              </ul>
-            </li>
+            <li>We chose 'Poppins' as the font to represent our brand. The reason being is that Poppins is a very clean, modern and minimal typeface. The style is nicely rounded, easy to read, doesn't scream for attention. This is exactly what we want to represent with our brand: Ease, softness, balance.</li>
+              <p></p>
+            <li>On our website, we made use of grids, carousels, and a menu bar. We used all these options to make the website as user-friendly and intuitive as possible. 
+            <p></p>
+            We use grids to show some of our Instagram and TikTok posts. We use a carousel to display our brand, brand colors, and mood board. And we chose to use a menu bar because there are quite some pages on this website, so a menu bar keeps the site look minimalistic.</li>
+              <p></p>
+            <li>Content has been divided evenly across all pages. Pages are divided into Marketing, Corporate, Brand Roadmap, and Investing sections. The navigation has been tried to make it as simple as possible, giving the user a menu bar with options to choose from. Some pages also link to each other, such as the landing page and the investment page. 
+            <p></p>
+            There is also a content hierarchy, with headings, bold text, etc. to keep a streamlined and good looking webstructure. 
+            <p></p>
+            Also, we tried to keep the site consistent by using the colors from the color scheme, and using the same hierarchy all across the website.
+            <p></p>
+            The website is also responsive for mobile devices, so that it can be accessed from whatever device the user prefers.
+
+
+            As mentioned before, our goal was to keep the site look&feel as consistent as possible, by only using colors from the color pallette, using the same fonts, etc. 
+
+          The landing page also links to the ‘invest’ page, as part of our funnel from our marketing strategy. </li>
           </ul>
           <h4 id="production-2" class="mt-2">Credits</h4>
-          <p>Please provide links and/or credits for third-party elements including:</p>
+          <p>We used copyright free images (from Unsplash) to create the content for our brand. Please find links to this content below:</p>
           <ul>
-            <li>HTML <strong>templates</strong> if these are different from this one (<a href="https://github.com/buas-media-interactive/prj4-group-template" target="_blank">buas-media-interactive/prj4-group-template</a>)</li>
-            <li>The source code for <strong>UX patterns</strong> other than the ones provided by the “Bootstrap” library (see <a href="https://getbootstrap.com/docs/5.2/" target="_blank">getbootstrap.com/docs</a> for a list of such patterns)</li>
-            <li><strong>Images</strong> that were not produced by students themselves, including when crediting is not mandatory (in other words, we ask you to credit Unsplash images)</li>
+            <li><a href="https://unsplash.com/photos/hhyAlXfmlag" target="_blank">Unsplash 1</a></li>
+            <li><a href="https://unsplash.com/photos/DTZV8WDM1Ho" target="_blank">Unsplash 2</a></li>
+            <li><a href="https://unsplash.com/photos/jvoZ-Aux9aw" target="_blank">Unsplash 3</a></li>
+            <li><a href="https://unsplash.com/photos/mkElzh0q28E" target="_blank">Unsplash 4</a></li>
+            <li><a href="https://unsplash.com/photos/FUR3LNiI2jc" target="_blank">Unsplash 5</a></li>
+            <li><a href="https://unsplash.com/photos/RxQbPMAaUT8" target="_blank">Unsplash 6</a></li>
+            <li><a href="https://unsplash.com/photos/1ZtFYKeQNL4" target="_blank">Unsplash 7</a></li>
+            <li><a href="https://unsplash.com/photos/QbDe8JxtUp0" target="_blank">Unsplash 8</a></li>
+            <li><a href="https://unsplash.com/photos/pYWutM6t7Ig" target="_blank">Unsplash 9</a></li>
           </ul>
           <h4 id="production-3" class="mt-2">Testing Report</h4>
           <p>Please write about&hellip;</p>
@@ -216,31 +215,34 @@
 
           <h2 id="marketing" class="mt-5">Marketing</h2>
           <h4 id="marketing-1" class="mt-2">Context of campaign and promotional activities</h4>
-          <p>Explain the context of the campaign is (What the campaign is about, what the message is, which promotional activities were executed). In addition, present the objectives as mentioned in the Communication & Media Plan.</p>
-          <p>Explain and justify the chosen channels/platforms used and show there is a solid connection to the objectives established in the Communication & Media Plan.</p>
+          <p>Communications objectives
+          <p></p>
+          Our main objective for the communication on our social pages during this campaign was to spark our target groups interest by creating videos and photo posts that make them want to know more about the brand and what it represents. We want to try to get an emotional expression out of our target group, to achieve awareness to our social channels, to grow followers, and to create leads which will visit our website's landing page.
+          <p></p>
+          Besides that we wanted to focus on growing a follower base of people who are interested in the brand, so that in the future it becomes easier to reach a bigger group and lead more people to the website.</p>
+          <p>We also have 4 reach objectives for this campaign:</p>
+              <p>1. Reach 100 followers on Instagram within the first 3 weeks of our campaign</p>
+              <p>2. Reach 50 followers on TikTok within the first 3 weeks of our campaign.</p>
+              <p>3. Have 10% of our IG and TikTok followers like and interact with our posts at the end of the 3 week campaign. (This would be 15 people for post out of 150 total)</p>
+              <p>4. Have 5% of our IG and TikTok followers redirected to check out our website/landing page in 3 weeks. (This would be a total of 8 people out of 150 total).</p>
+            <p>The goal of this campaign is to have leads convert to our landing page. We want to get them to do so by focusing on the individual users’ emotions and decision making process.</p>
+            <p>For this campaign we focused on Men between 18 and 29-years-old who are interested in sneaker culture, located in Western-Europe.</p>
+            <p>We chose to use Instagram and TikTok as our social media channels, because research shows that these platforms are among the most popular for our target group.</p>
+            <p>Please find the full marketing plan <a href="https://drive.google.com/" target="_blank">here</a>.</p>
           <h4 id="marketing-2" class="mt-4">Learning Points</h4>
-          <p>Identify and justify your learning point (based on the Communication & Media Plan). What did you learn during the duration of the project concerning the campaign? What worked and what didn’t? What went as expected and what didn’t? What would you do differently? Reflect on the past work and describe what you learned.</p>
+          <p>These are the biggest learning points:
+
+          <p><li>It’s relatively easy to gain views on TikTok due to it’s high organic reach. Our posts ranged in views between 200 to 1000 views. Even though we received way more visitors to our posts than on Instagram, we did not gain many actual followers on the platform. We are a bit confused by why this is exactly. It seems that brand loyalty is much higher and easier to achieve on other platforms such as Instagram.</li></p>
+          <p><li>Our Instagram follower growth has been growing steadily. Its important to keep interacting with others, as we found that this works best for getting people to follow our brand. When interacting with others, these users will take a quick look at our brand, and if they like the content they see, there is a high chance that these users will follow our account.</li></p>
+          <p><li>Creating original content is NOT easy. Since I did this campaign all by myself, I spend a lot of time creating posts, the website, the campaign, etc. It’s best to have a team of people to run a campaign, not only because more people can do more work, but also because more heads mean more ideas.</li></p>
+          <p><li>The use of hashtags didn’t seem to be really effective on both TikTok or Instagram. Also, adding locations to posts didn’t seem to attract many users, other than local pages asking to promote the post on their profiles, such as a page about “Amsterdam”.</li></p>
           <h4 id="marketing-3" class="mt-4">Future Planning</h4>
-          <p>Reflection on what has been done and describe in detail what you would do if the project would continue.</p>
-          <p>Describe in detail your future recommendations if the campaign would be continued.</p>
-          <p>Detail and describe clearly the process of what your would do differently based on you experience on this project related to the marketing assignment.</p>
+          <p>So far 9 posts for Instagram have been created, and 6 videos for TikTok. A total of 18 users have visited our website’s landing page. this is more than twice the goal we’d set at the start of this campaign! We’ve tried to make the content as consistent as possible across both social media channels. In case this project would continue, it would be recommended to keep creating content that is similar to the already existing content, especially keeping the fonts, colors, and other important brand visuals.</p>
+          <p>However, in the future, it might be better to also experiment with other sorts of content, especially on TikTok, as we saw that even though we received a reasonable amount of viewers, we had barely any users that converted into following us, nor any that visited our website’s landing page. Experimenting with different trends could be a way to see what content does well, and which content performs less well. If we see that a specific type of content does well, more content similar to this same topic should be made, to leverage the trend.</p>
+          <p>Looking back, we could have experimented with more different type of content, trying more trends, and seeing which one reaches most people. However, we already create quite some different styles of content, so we would just have to keep this going. </p>
           <h4 id="marketing-4" class="mt-4">Professionalism</h4>
-          <p>Present and organize below all social media/online activities of the campaign. Context and material are according to the brand style, image, and vision. Images on the site are of high-quality, readable, and properly designed.</p>
-          <ul class="list-unstyled d-flex flex-wrap justify-content-center align-items-center">
-            <li class="m-2">
-              <a href="#"><!-- Please make a link to your socials instead -->
-                <img alt="Image Placeholder" class="img-thumbnail" src="images/social-media-placeholder.jpg">
-              </a>
-            </li>
-            <li class="m-2">
-              <a href="#"><!-- Please make a link to your socials instead -->
-                <img alt="Image Placeholder" class="img-thumbnail" src="images/social-media-placeholder.jpg">
-              </a>
-            </li>
-            <li class="m-2">
-              <a href="#"><!-- Please make a link to your socials instead -->
-                <img alt="Image Placeholder" class="img-thumbnail" src="images/social-media-placeholder.jpg">
-              </a>
+          <p>This whole site, together with all content created for our Instagram and TikTok pages, were designed around our brand’s visual identity. We hope this is recognized by the end user as a consistent whole of high quality. A brands identity is very important because it is the first thing a user sees when interacting with our brand.</p>
+          <p>Please find all produced content on <a href="https://sneaks-official.github.io/SNEAKS/marketing.html" target="_blank">this page</a>.</p>
             </li>
           </ul>
         
@@ -248,60 +250,10 @@
 
           <h2 id="management" class="mt-5">Management</h2>
 
-          <h4 id="management-1" class="mt-2">Lean Canvas</h4>
+          <h4 id="management-1" class="mt-2">Exemption from BOE</h4>
 
-          <p>Fill in at least 2 bullet points per building block and according to the rubrics.</p>
-
-          <p class="fw-bold">Problem</p>
-          <ul>
-            <li>List your top 3 problems you solve for your target group(s).</li>
-            <li>Describe briefly how the problems are solved now (existing alternatives).</li>
-          </ul>
-          <p class="fw-bold">Solution</p>
-          <ul>
-            <li>Outline the brand solution(s) you have for the above problem(s).</li>
-          </ul>
-          <p class="fw-bold">Customer segments</p>
-          <ul>
-            <li>List your target customers and/or users.</li>
-            <li>Describe briefly the characteristics of your ideal customer (early adopter, brand persona).</li>
-          </ul>
-          <p class="fw-bold">Unique value proposition</p>
-          <ul>
-            <li>With a single, clear compelling message, state why your brand idea is different and worth paying attention to.</li>
-            <li></li>
-          </ul>
-          <p class="fw-bold">Unfair advantage</p>
-          <ul>
-            <li>List the aspect(s) of your brand that cannot easily be copied, also called your sustainable competitive advantage(s).</li>
-          </ul>
-          <p class="fw-bold">Channels</p>
-          <ul>
-            <li>List your main path to customers.</li>
-            <li>How do you reach them? What channel(s) do you use.</li>
-          </ul>
-          <p class="fw-bold">Key metrics</p>
-          <ul>
-            <li>List the key numbers that tell you how your brand experience is doing.</li>
-            <li>For example amount of users, downloads, visitors, subscriptions, sales etc. Numbers you are able to measure.</li>
-          </ul>
-          <p class="fw-bold">Revenue streams</p>
-          <ul>
-            <li>List your sources of revenue: describe the revenue model and the (different) revenue stream(s).</li>
-          </ul>
-          <p class="fw-bold">Cost structure</p>
-          <ul>
-            <li>List your main costs: define the fixed and variable costs.</li>
-            <li>Calculate the cost per unit.</li>
-          </ul>
-          <p class="fw-bold">Services/products</p>
-          <ul>
-            <li>State what your product and/or service is and how this contributes to your unique value proposition.</li>
-            <li>Clarify the fit between the product/service developed and the brand identity/brand image.</li>
-          </ul>
-
-          <h4 id="management-2" class="mt-2">Validation of Assumptions</h4>
-          <p>Write a reflection on the choices made in creating choosing the trademark, including an analysis of the existing alternatives.</p>
+          <p>The Board of Examiners (BOE) has granted me approval to only redo the missing parts of the PRJ4 course. Since I already passed this part of the PRJ4 course last time, this part has been left out.</p>
+          <p>Please find proof of this exemption request on <a href="hhttps://sneaks-official.github.io/SNEAKS/lean_canvas-and-brand_roadmap.html" target="_blank">this page</a>.</p>
 
           <!-- End Management, start Appendix -->
           
@@ -309,69 +261,13 @@
           <h2 id="appendix" class="mt-5">Appendix</h2>
 
           <p>
-            Please use the list below to provide links to evidence for all parts of your justication.
-            Please double-check all links before delivering the website.
-            Do not hesitate to refer to these numbers above.
+            Please find all evidence and social media insights by clicking <a href="https://drive.google.com/drive/folders/1YTwuKVqoMjCJnQdcqBGMriWR51FXfN-B?usp=sharing" target="_blank">here</a>.
           </p>
 
-          <ol>
-            <li>
-              <a href="https://" target="_blank">Description of evidence #1</a>
-            </li>
-            <li>
-              <a href="https://" target="_blank">Description of evidence #2</a>
-            </li>
-            <li>
-              <a href="https://" target="_blank">Description of evidence #3</a>
-            </li>
-            <li>
-              <a href="https://" target="_blank">Description of evidence #4</a>
-            </li>
-            <li>
-              <a href="https://" target="_blank">Description of evidence #5</a>
-            </li>
-          </ol>
-          
         </div>
       </div>
     </main>
-
-    <!-- A footer with socials -->
-    <footer class="sticky-bottom shadow-lg mt-5 py-4 bg-body">
-      <div class="container d-flex justify-content-between align-items-center">
-        <p>
-          © 2020&ndash;2021 &mdash; Breda University of Applied Sciences
-        </p>
-        <ul class="list-unstyled d-flex align-items-center opacity-75">
-          <li>
-            <a href="https://www.facebook.com/bredauniversityas" target="_blank">
-              <img class="m-2" src="images/facebook.svg" alt="Follow us on" width="26">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/school/bredauniversityas/" target="_blank">
-              <img class="m-2" src="images/linkedin.svg" alt="Follow us on LinkedIn" width="26">
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/bredauas" target="_blank">
-              <img class="m-2" src="images/twitter.svg" alt="Follow us on Twitter" width="26">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/BredaUniversityofAppliedSciences" target="_blank">
-              <img class="m-2" src="images/youtube.svg" alt="Follow us on YouTube" width="26">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/bredauniversityas/" target="_blank">
-              <img class="m-2" src="images/instagram.svg" alt="Follow us on Instagram" width="26">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <!-- End of the grid -->
+    <!-- End of main placeholder -->
 
   </body>
 </html>
