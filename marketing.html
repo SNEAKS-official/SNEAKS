@@ -32,12 +32,11 @@
   <body class="h-100 d-flex flex-column">
 
     <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar">
         <a class="navbar-brand" href="index.html">
           <img src="images/sneaks-logo.png" alt="Premium supplies sneaks light blue logo" width="70" >
         </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="about.html">About</a>
             </li>
@@ -53,33 +52,33 @@
               </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="invest.html">Invest</a>
+              <a class="nav-link" aria-current="page" href="invest.html">Invest</a>
             </li>
-          </ul>
-        </div>
+        </ul>
+
     </nav>
     <!-- End of navigation bar -->
 
     <!-- Start of main placeholder in landing page -->
-    <main class="d-flex flex-column justify-content-center align-items-left">
+    <main>
         <h1> Marketing </h1>
         <section class="about-wrapper-100">
             <h2> Objectives </h2>
-            <section class="identity-content">
-                <div>
+            <section class="identity-content-baseline">
+                <div class="identity-content-child">
                     <h3> 1. </h3>
                     <p>Reach 100 followers on Instagram within the first 3 weeks of our campaign</p>
                 </div>
-                <div>
+                <div class="identity-content-child">
                     <h3> 2. </h3>
                     <p>Reach 50 followers on TikTok within the first 3 weeks of our campaign.</p>
                 </div>
-                <div>
+                <div class="identity-content-child">
                     <h3> 3. </h3>
                     <p>Have 10% of our IG and TikTok followers like and interact with our posts at the end of the 3 week campaign. (This would be 15 people for post out of 150 total)
                     </p>
                 </div>
-                <div>
+                <div class="identity-content-child">
                     <h3> 4. </h3>
                     <p>Have 5% of our IG and TikTok followers redirected to check out our website/landing page in 3 weeks. (This would be a total of 8 people out of 150 total).
                     </p>
@@ -117,10 +116,12 @@
                 <article class="card-wraper">                
                         <!-- Card #1 -->
                         <div class="ig-card">
-                            <img src="images/sneaks-instagram_1.jpeg" alt="ig-1" class="card-img" width="300px" height="auto">
-                            <div class="card-body">
-                                <h5>Brand colors</h5>
-                                <h6>We created posts like these which represent the brand, by making use of its primary color, blue, which stands out directly from other posts.</h6>
+                            <div>
+                                <img src="images/sneaks-instagram_1.jpeg" alt="ig-1" class="card-img" width="300px" height="auto">
+                                <div class="card-body">
+                                    <h5>Brand colors</h5>
+                                    <h6>We created posts like these which represent the brand, by making use of its primary color, blue, which stands out directly from other posts.</h6>
+                                </div>
                             </div>
                             <div class="card-footer">
                                 <a href="https://www.instagram.com/p/CqSYA2AIjc2/" class="card-btn" target="_blank">Go to post</a>
@@ -129,10 +130,12 @@
                         <!-- End of card -->
                         <!-- Card #2 -->
                         <div class="ig-card">
-                            <img src="images/sneaks-instagram_2.jpeg" alt="ig-2" class="card-img" width="300px" height="auto">
-                            <div class="card-body">
-                                <h5>Alternative colors</h5>
-                                <h6>To make sure our whole feed doesn't look just blue, we also added some posts of other colors, to keep a nice balance and give our feed some variation.</h6>
+                            <div>
+                                <img src="images/sneaks-instagram_2.jpeg" alt="ig-2" class="card-img" width="300px" height="auto">
+                                <div class="card-body">
+                                    <h5>Alternative colors</h5>
+                                    <h6>To make sure our whole feed doesn't look just blue, we also added some posts of other colors, to keep a nice balance and give our feed some variation.</h6>
+                                </div>
                             </div>
                             <div class="card-footer">
                                 <a href="https://www.instagram.com/p/Cqm5afHsNLk/" class="card-btn" target="_blank">Go to post</a>
@@ -141,10 +144,12 @@
                         <!-- End of card -->
                         <!-- Card #3 -->
                         <div class="ig-card">
-                            <img src="images/sneaks-instagram_3.jpeg" alt="ig-3" class="card-img" width="300px" height="auto">
-                            <div class="card-body">
-                                <h5>Interactive content</h5>
-                                <h6>We created interactive posts, which show the user content, and then ask what they think or which of the contents they like most, to try to get them to interact.</h6>
+                            <div>
+                                <img src="images/sneaks-instagram_3.jpeg" alt="ig-3" class="card-img" width="300px" height="auto">
+                                <div class="card-body">
+                                    <h5>Interactive content</h5>
+                                    <h6>We created interactive posts, which show the user content, and then ask what they think or which of the contents they like most, to try to get them to interact.</h6>
+                                </div>
                             </div>
                             <div class="card-footer">
                                 <a href="https://www.instagram.com/p/Cq2aI3HqOPt/" class="card-btn" target="_blank">Go to post</a>
@@ -153,10 +158,12 @@
                         <!-- End of card -->
                         <!-- Card #4 -->
                         <div class="ig-card">
-                            <img src="images/sneaks-instagram_4.jpeg" alt="ig-4" class="card-img" width="300px" height="auto">
-                            <div class="card-body">
-                                <h5>Brand persona</h5>
-                                <h6>We also tried to blend in some posts which would match with our 'brand persona' Our goal by doing this is to get our target group to recognise themselves in our content, and become interested, and thus start following us.</h6>
+                            <div>
+                                <img src="images/sneaks-instagram_4.jpeg" alt="ig-4" class="card-img" width="300px" height="auto">
+                                <div class="card-body">
+                                    <h5>Brand persona</h5>
+                                    <h6>We also tried to blend in some posts which would match with our 'brand persona' Our goal by doing this is to get our target group to recognise themselves in our content, and become interested, and thus start following us.</h6>
+                                </div>
                             </div>
                             <div class="card-footer">
                                 <a href="https://www.instagram.com/p/Cqc8j-BIEtX/" class="card-btn" target="_blank">Go to post</a>
@@ -191,10 +198,12 @@
                 <article class="card-wraper">                
                         <!-- Card #1 -->
                         <div class="tk-card">
-                            <img src="images/sneaks-tiktok_1.png" alt="ig-1" class="card-img" width="300px" height="auto">
-                            <div class="card-body">
-                                <h5>YES or NO?</h5>
-                                <h6>This type of content seemed to be quite popular on the TikTok platform. We created our own videos, and added popular music to see if we could jump on this trend.</h6>
+                            <div>
+                                <img src="images/sneaks-tiktok_1.png" alt="ig-1" class="card-img" width="300px" height="auto">
+                                <div class="card-body">
+                                    <h5>YES or NO?</h5>
+                                    <h6>This type of content seemed to be quite popular on the TikTok platform. We created our own videos, and added popular music to see if we could jump on this trend.</h6>
+                                </div>
                             </div>
                             <div class="card-footer">
                                 <a href="https://www.tiktok.com/@sneaks_premium/video/7216681707909549318" class="card-btn" target="_blank">Go to post</a>
@@ -203,10 +212,12 @@
                         <!-- End of card -->
                         <!-- Card #2 -->
                         <div class="tk-card">
-                            <img src="images/sneaks-tiktok_2.png" alt="ig-2" class="card-img" width="300px" height="auto">
-                            <div class="card-body">
-                                <h5>Dunk Originals</h5>
-                                <h6>Every sneakerhead knows the Nike Dunk Low's. The original Dunk Lows consisted of basic colorways. As a first video on our page, we asked users which colorway they prefer.</h6>
+                            <div>
+                                <img src="images/sneaks-tiktok_2.png" alt="ig-2" class="card-img" width="300px" height="auto">
+                                <div class="card-body">
+                                    <h5>Dunk Originals</h5>
+                                    <h6>Every sneakerhead knows the Nike Dunk Low's. The original Dunk Lows consisted of basic colorways. As a first video on our page, we asked users which colorway they prefer.</h6>
+                                </div>
                             </div>
                             <div class="card-footer">
                                 <a href="https://www.tiktok.com/@sneaks_premium/video/7215514967594913029" class="card-btn" target="_blank">Go to post</a>
@@ -215,10 +226,12 @@
                         <!-- End of card -->
                         <!-- Card #3 -->
                         <div class="tk-card">
-                            <img src="images/sneaks-tiktok_3.png" alt="ig-3" class="card-img" width="300px" height="auto">
-                            <div class="card-body">
-                                <h5>Celebrities</h5>
-                                <h6>One strategy we tried was to make use of already popular/established names, to try to gain traction to our own brand. We created this content which shows famous celibrities walking on Nike AF1's.</h6>
+                            <div>
+                                <img src="images/sneaks-tiktok_3.png" alt="ig-3" class="card-img" width="300px" height="auto">
+                                <div class="card-body">
+                                    <h5>Celebrities</h5>
+                                    <h6>One strategy we tried was to make use of already popular/established names, to try to gain traction to our own brand. We created this content which shows famous celibrities walking on Nike AF1's.</h6>
+                                </div>
                             </div>
                             <div class="card-footer">
                                 <a href="https://www.tiktok.com/@sneaks_premium/video/7218535718585470213" class="card-btn" target="_blank">Go to post</a>
@@ -227,10 +240,12 @@
                         <!-- End of card -->
                         <!-- Card #4 -->
                         <div class="tk-card">
-                            <img src="images/sneaks-tiktok_4.png" alt="ig-4" class="card-img" width="300px" height="auto">
-                            <div class="card-body">
-                                <h5>Engaging content</h5>
-                                <h6>Because TikTok is such a "high-speed" platform, we wanted to try to keep users engaged as much as possible. Take this post we created, which has a countdown of most expensive sneakers ever sold. The user wants to see what's nr. 1, so he/she will stay until the end of the video to see.</h6>
+                            <div>
+                                <img src="images/sneaks-tiktok_4.png" alt="ig-4" class="card-img" width="300px" height="auto">
+                                <div class="card-body">
+                                    <h5>Engaging content</h5>
+                                    <h6>Because TikTok is such a "high-speed" platform, we wanted to try to keep users engaged as much as possible. Take this post we created, which has a countdown of most expensive sneakers ever sold. The user wants to see what's nr. 1, so he/she will stay until the end of the video to see.</h6>
+                                </div>
                             </div>
                             <div class="card-footer">
                                 <a href="https://www.tiktok.com/@sneaks_premium/video/7219283316623609094" class="card-btn" target="_blank">Go to post</a>
