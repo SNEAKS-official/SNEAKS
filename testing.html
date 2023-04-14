@@ -32,55 +32,62 @@
   <body class="h-100 d-flex flex-column">
 
     <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/sneaks-logo.png" alt="Premium supplies sneaks light blue logo" width="70" >
-        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="about.html">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Contents
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="marketing.html">Marketing</a></li>
-                <li><a class="dropdown-item" href="testing.html">Testing</a></li>
-                <li><a class="dropdown-item" href="lean_canvas-and-brand_roadmap.html">Lean canvas & brand roadmap</a></li>
-                <li><a class="dropdown-item-last" href="corporate.html">Corporate</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="invest.html">Invest</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
-    <!-- End of navigation bar -->
+    <nav class="navbar">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/sneaks-logo.png" alt="Premium supplies sneaks light blue logo" width="70" >
+      </a>
+      <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contents
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="marketing.html">Marketing</a></li>
+              <li><a class="dropdown-item" href="testing.html">Testing</a></li>
+              <li><a class="dropdown-item" href="lean_canvas-and-brand_roadmap.html">Lean canvas & brand roadmap</a></li>
+              <li><a class="dropdown-item-last" href="corporate.html">Corporate</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="invest.html">Invest</a>
+          </li>
+      </ul>
+
+  </nav>
+  <!-- End of navigation bar -->
 
     <!-- Start of main placeholder in landing page -->
-    <main class="d-flex flex-column justify-content-center align-items-left">
+    <main>
         <h1> Testing </h1>
         <section class="about-wrapper-100">
             <h2>Feedback & improvements</h2>
             <section class="identity-content">
-                <div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
-                </div>
+              <div>
+                <p>To help improve our website, we asked a total of 5 people (within our target group) to check out our website and provide us with feedback about its contents, layout, images, and usability.</p>
+                <p>These were the points that stood out most:</p>
+                <ul>
+                  <li class="invest-list">LANDING PAGE: Overall this seemed to look okay, but some users mentioned there was something missing like a logo or more colors.</li>
+                  <li class="invest-list">INVEST PAGE: There was text missing on this page, which confused users and made them unable to understand what they’d invest in. We updated this and added clickable buttons.</li>
+                  <li class="invest-list">ABOUT PAGE: A lot of users mentioned that the pictures didn’t fit the screen. We fixed this on both mobile and desktop. Also; the text which appeared on top of the carousel was too big and distracting, so we got rid of it.</li>
+                  <li class="invest-list">MARKETING PAGE: The ‘objectives’ seem to look weird to the users. We changed these from stating them next to each other to stating them on top of each other. This looks better and more intuitive.</li>
+                  <li class="invest-list">SCREEN FIT: Users mentioned that on laptop/desktop everything fits, but that on mobile devices some pictures don’t fit well. We tried fixing this as much as possible, but due to lack of technical skills some pictures might still not fit perfectly on mobile devices. This would be fixable with more time and more technical skills.</li>
+                </ul>
+                <p>Please find a copy of the answers to the user tests here below:</p>
+              </div>
             </section>
         </section>
 
         <section class="about-wrapper-100">
-            <h2>Appendix (testing questions)</h2>
+            <h2>Testing Q&A's</h2>
             <section class="identity-content">
                 <div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates saepe nam recusandae soluta ullam doloremque magni, minima ducimus reiciendis pariatur ratione molestias autem voluptate eaque similique eveniet eligendi, id doloribus?</p>
+                    <img src="images/sneaks-testing-1.png" alt="" width="900px" height="auto" class="testing-imgs">
+                    <img src="images/sneaks-testing-2.png" alt="" width="900px" height="auto" class="testing-imgs">
+                    <img src="images/sneaks-testing-3.png" alt="" width="900px" height="auto" class="testing-imgs">
+                    <img src="images/sneaks-testing-4.png" alt="" width="900px" height="auto" class="testing-imgs">
                 </div>
             </section>
         </section>
